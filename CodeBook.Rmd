@@ -1,0 +1,45 @@
+---
+title: "CodeBook"
+author: "Hyungue Lim"
+date: "6/23/2019"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+Link for full description of raw data:
+
+- http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
+
+Link for the raw data:
+
+- https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
+
+#Data Description
+
+If one wishes to use the codes in "run_alaysis.R" without modification, working directory should be set to "/getdata_projectfiles_UCI HAR Dataset/UCI HAR Dataset" before using the codes
+
+Data trainsformations are explained with the codes in "run_analysis.R"
+
+- "Average_data" consists of average values of variables in "Combined_Data" based on each activity and subject. CSV version of this data is included
+
+- "Combined_Data" consists of only mean and standard deviation values from the raw data. This includes both test set and training set with their activity labels and subject numbers. CSV version of this data is included
+
+- "xtest" consists of test set observations 
+
+- "xtrain" consists of training set observations
+
+- "ytest" consists of test set activity labels
+
+- "ytrain" consists of training set activity labels
+
+- "test" is the combined data  of "xtest" and "ytest"
+
+- "train" is the combined data of "xtrain" and "ytrain"
+
+- "subject_test" consists of the subject number for each test observation
+
+- "subject_train" consists of the subject number for each training observation
+
